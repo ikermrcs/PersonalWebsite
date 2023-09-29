@@ -55,3 +55,11 @@ carrusel.addEventListener('animationend', () => {
     clonedImages.push(carruselItems[numImages - 1].cloneNode(true));
     carrusel.appendChild(clonedImages[numImages - 1]);
 });
+
+window.addEventListener('DOMContentLoaded', function() {
+    const smallScreenMessage = document.querySelector('.small-screen-message');
+
+    if (window.innerWidth <= 600) {
+        smallScreenMessage.style.display = 'block';
+    }
+});
