@@ -755,3 +755,55 @@ footer #gmail img{
     padding-right: 0.8rem;
 
 }
+
+.small-screen-message {
+    display: none;
+}
+
+@media screen and (max-width: 1140px) {
+    header {
+        display: none;
+    }
+    .inicio {
+        display: none;
+    }
+    .cuerpo {
+        display: none;
+    }
+
+    .trayectoria {
+        display: none;
+    }
+    .interests {
+        display: none;
+    }
+    
+    .activities {
+        display: none;
+    }
+    .interests2 {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+
+    .small-screen-message {
+        display: block;
+    }
+    body{
+        text-decoration: none;
+        text-align: center;
+        background-color:rgb(34, 34, 34);
+        font-weight: 300;
+        color: rgb(232, 232, 232);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    }
+
+}
